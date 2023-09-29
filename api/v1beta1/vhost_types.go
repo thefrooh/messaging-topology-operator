@@ -16,7 +16,7 @@ import (
 
 // VhostSpec defines the desired state of Vhost
 type VhostSpec struct {
-	// Name of the vhost; see https://www.rabbitmq.com/vhosts.html.
+	// Name of the vhost; cannot be updated; see https://www.rabbitmq.com/vhosts.html.
 	// +kubebuilder:validation:Required
 	Name    string   `json:"name"`
 	Tracing bool     `json:"tracing,omitempty"`
